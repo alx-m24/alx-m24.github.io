@@ -2,21 +2,24 @@ body {
     background: radial-gradient(circle at top, #595959, #3d3d3d);
 }
 
-/* General scrollbar styles */
+img {
+    max-height:100%;
+    max-width:100%;
+    height: auto;
+}
+
 ::-webkit-scrollbar {
-    width: 5px; /* width of the scrollbar */
+    width: 5px;
     height: 8px;
 }
 
-/* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-    background: #888; /* color of the scrollbar thumb */
-    border-radius: 10px; /* roundness of the thumb */
+    background: #888;
+    border-radius: 10px;
 }
 
-/* Scrollbar track */
 ::-webkit-scrollbar-track {
-    background: #666666; /* color of the scrollbar track */
+    background: #666666;
 }
 
 .container {
@@ -28,6 +31,7 @@ body {
     overflow-y: hidden;
     display: flex;
 }
+
 
 .container-description {
     flex: 0 0 18%;
@@ -79,5 +83,5 @@ body {
 
     .container-item:hover ~ .container-item {
         transform-origin: center;
-        transform: translateX(45%)
+        transform: translateX(35%)
     }
